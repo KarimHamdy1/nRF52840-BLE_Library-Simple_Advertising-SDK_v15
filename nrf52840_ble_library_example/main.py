@@ -18,7 +18,7 @@ def gap_start():
     pass
 
 @native_c("_ble_set_gap_gatt_services_start",["header/nrf52840_ble.c"],[])
-def gap_gatt_services_start():
+def gatt_services_Adv_start():
     pass
 
 @native_c("_continue_advertising",["header/nrf52840_ble.c"],[])
@@ -36,7 +36,7 @@ streams.serial()
 
 ble_init()
 gap_start()
-gap_gatt_services_start()
+gatt_services_Adv_start()
 
 
 
